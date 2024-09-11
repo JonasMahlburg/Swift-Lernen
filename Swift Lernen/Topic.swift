@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Topic: Decodable, Hashable{
+    let title: String;
+    let explanation: String;
+    let codeSnippet: String;
+    
+    
+}

@@ -11,6 +11,10 @@
 		DDFA96D22C91983B001646B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA96D12C91983B001646B1 /* ContentView.swift */; };
 		DDFA96D42C91983D001646B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFA96D32C91983D001646B1 /* Assets.xcassets */; };
 		DDFA96D72C91983D001646B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFA96D62C91983D001646B1 /* Preview Assets.xcassets */; };
+		DDFA96DE2C9198B0001646B1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFA96DD2C9198B0001646B1 /* data.json */; };
+		DDFA96E02C919922001646B1 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA96DF2C919922001646B1 /* Topic.swift */; };
+		DDFA96E22C919A64001646B1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA96E12C919A64001646B1 /* ViewModel.swift */; };
+		DDFA96E42C91A126001646B1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA96E32C91A126001646B1 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		DDFA96D12C91983B001646B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDFA96D32C91983D001646B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDFA96D62C91983D001646B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDFA96DD2C9198B0001646B1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		DDFA96DF2C919922001646B1 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		DDFA96E12C919A64001646B1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DDFA96E32C91A126001646B1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				DDFA96CF2C91983B001646B1 /* Swift_LernenApp.swift */,
 				DDFA96D12C91983B001646B1 /* ContentView.swift */,
+				DDFA96E32C91A126001646B1 /* DetailView.swift */,
+				DDFA96DF2C919922001646B1 /* Topic.swift */,
+				DDFA96E12C919A64001646B1 /* ViewModel.swift */,
+				DDFA96DD2C9198B0001646B1 /* data.json */,
 				DDFA96D32C91983D001646B1 /* Assets.xcassets */,
 				DDFA96D52C91983D001646B1 /* Preview Content */,
 			);
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFA96D72C91983D001646B1 /* Preview Assets.xcassets in Resources */,
+				DDFA96DE2C9198B0001646B1 /* data.json in Resources */,
 				DDFA96D42C91983D001646B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFA96D22C91983B001646B1 /* ContentView.swift in Sources */,
+				DDFA96E02C919922001646B1 /* Topic.swift in Sources */,
+				DDFA96E22C919A64001646B1 /* ViewModel.swift in Sources */,
+				DDFA96E42C91A126001646B1 /* DetailView.swift in Sources */,
 				DDFA96D02C91983B001646B1 /* Swift_LernenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

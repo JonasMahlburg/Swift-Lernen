@@ -8,11 +8,41 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    let topic: Topic
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ScrollView{
+            VStack (alignment: .leading, spacing: 12) {
+        
+                Text("Erklärung")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .bold()
+                
+                Text(topic.explanation)
+                
+                Text("Code Beispiel")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .bold()
+                
+                Text(topic.codeSnippet)
+                    .font(.system(size: 14,
+                                  design: .monospaced))
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    .padding()
+                    .background(.gray
+                        .opacity(0.2))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            }
+            .padding()
+        }
+        .navigationTitle(topic.title)
+        .navigationBarTitleDisplayMode(.inline)
+        }
+        
+        
 }
 
 #Preview {
-    DetailView()
+    DetailView(topic: Topic(title: "Konstante", explanation: "Speichert Daten", codeSnippet: "let variable: String"))
 }
+
