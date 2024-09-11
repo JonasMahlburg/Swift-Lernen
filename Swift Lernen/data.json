@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Variablen",
+        "explanation": "Variablen sind Speicherorte, die Daten speichern können. In Swift werden sie mit dem Schlüsselwort 'var' deklariert.",
+        "codeSnippet": "var meinName = \"Max\""
+    },
+    {
+        "title": "Konstanten",
+        "explanation": "Konstanten sind wie Variablen, aber ihr Wert kann nicht geändert werden. Sie werden mit 'let' deklariert.",
+        "codeSnippet": "let maximalesAlter = 100"
+    },
+    {
+        "title": "Datentypen",
+        "explanation": "Datentypen definieren die Art der Werte, die eine Variable oder Konstante speichern kann, wie z.B. String, Int, Double.",
+        "codeSnippet": "var alter: Int = 30"
+    },
+    {
+        "title": "If-Anweisungen",
+        "explanation": "If-Anweisungen führen Code aus, wenn eine bestimmte Bedingung wahr ist.",
+        "codeSnippet": "if alter > 18 {\n\tprint(\"Volljährig\")\n}"
+    },
+    {
+        "title": "Funktionen",
+        "explanation": "Funktionen sind wiederverwendbare Codeblöcke, die eine bestimmte Aufgabe ausführen.",
+        "codeSnippet": "func gruessen(person: String) {\n\tprint(\"Hallo, \\(person)\")\n}"
+    },
+    {
+        "title": "Schleifen",
+        "explanation": "Schleifen führen einen Codeblock wiederholt aus. Die 'for-in' Schleife ist eine häufig verwendete Schleife in Swift.",
+        "codeSnippet": "for i in 1...5 {\n\tprint(i)\n}"
+    },
+    {
+        "title": "Switch-Anweisungen",
+        "explanation": "Eine Switch-Anweisung prüft eine Variable auf mehrere mögliche Werte und führt unterschiedliche Aktionen aus.",
+        "codeSnippet": "switch meinName {\n\tcase \"Max\":\n\t\tprint(\"Hallo Max\")\n\tdefault:\n\t\tprint(\"Unbekannter Name\")\n}"
+    },
+    {
+        "title": "Arrays",
+        "explanation": "Arrays sind Sammlungen von Werten, die alle denselben Typ haben. Sie sind geordnet und ihre Werte können wiederholt werden.",
+        "codeSnippet": "var einkaufsliste = [\"Brot\", \"Milch\", \"Eier\"]"
+    },
+    {
+        "title": "Wörterbücher",
+        "explanation": "Wörterbücher speichern Assoziationen zwischen Schlüsseln und Werten. Jeder Schlüssel ist einmalig.",
+        "codeSnippet": "var kontakte = [\"Max\": 123456789, \"Anna\": 987654321]"
+    },
+    {
+        "title": "Optionals",
+        "explanation": "Ein Optional repräsentiert einen Wert, der vorhanden sein kann oder auch nicht. Es wird mit einem Fragezeichen '?' markiert.",
+        "codeSnippet": "var vielleichtZahl: Int? = 5"
+    },
+    {
+        "title": "Optional Binding",
+        "explanation": "Optional Binding wird verwendet, um sicherzustellen, ob ein Optional einen Wert enthält, und diesen Wert dann zu verwenden.",
+        "codeSnippet": "if let zahl = vielleichtZahl {\n\tprint(zahl)\n}"
+    },
+    {
+        "title": "Enums",
+        "explanation": "Enums definieren eine gemeinsame Gruppe von Werten mit einem gemeinsamen Typ, wobei jeder Wert unterschiedlich ist.",
+        "codeSnippet": "enum Himmelsrichtung {\n\tcase Nord, Süd, Ost, West\n}"
+    },
+    {
+        "title": "Strukturen",
+        "explanation": "Strukturen sind komplexe Datentypen, die Eigenschaften und Methoden enthalten können.",
+        "codeSnippet": "struct Person {\n\tvar name: String\n\tvar alter: Int\n}"
+    },
+    {
+        "title": "Klassen",
+        "explanation": "Klassen sind ähnlich wie Strukturen, können aber vererben und haben Referenzsemantik.",
+        "codeSnippet": "class Fahrzeug {\n\tvar geschwindigkeit: Int\n\tfunc fahren() {}\n}"
+    },
+    {
+        "title": "Vererbung",
+        "explanation": "Vererbung ermöglicht es einer Klasse, Eigenschaften und Methoden einer anderen Klasse zu erben.",
+        "codeSnippet": "class Auto: Fahrzeug {\n\tvar räder: Int = 4\n}"
+    },
+    {
+        "title": "Initialisierer",
+        "explanation": "Initialisierer sind spezielle Methoden, die zum Erstellen einer Instanz einer Klasse oder Struktur verwendet werden.",
+        "codeSnippet": "init(name: String, alter: Int) {\n\tself.name = name\n\tself.alter = alter\n}"
+    },
+    {
+        "title": "Protokolle",
+        "explanation": "Protokolle definieren eine Vorlage von Methoden, Eigenschaften und anderen Anforderungen, die eine Klasse oder Struktur erfüllen kann.",
+        "codeSnippet": "protocol Identifizierbar {\n\tvar id: String { get }\n}"
+    },
+    {
+        "title": "Extensions",
+        "explanation": "Extensions erweitern die Funktionalität bestehender Klassen, Strukturen, Enums oder Protokolle.",
+        "codeSnippet": "extension Int {\n\tfunc quadrat() -> Int {\n\t\treturn self * self\n\t}\n}"
+    },
+    {
+        "title": "Fehlerbehandlung",
+        "explanation": "Fehlerbehandlung in Swift wird verwendet, um auf Fehler in Programmen zu reagieren und diese zu korrigieren.",
+        "codeSnippet": "func kannFehlerWerfen() throws {\n\t// Code hier\n}"
+    },
+    {
+        "title": "Closures",
+        "explanation": "Closures sind selbstständige Blöcke funktionalen Codes, die in Swift verwendet werden können, um Code zu kapseln und als Argumente zu übergeben.",
+        "codeSnippet": "let sortiert = zahlen.sort { $0 > $1 }"
+    }
+]
